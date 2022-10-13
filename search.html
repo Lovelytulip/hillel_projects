@@ -9,10 +9,37 @@
 </head>
 
 <body>
-
-  <form id="form">
+  <fieldset>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="search.html">Search</a>
+  </fieldset>
+  <h1>Пошук</h1>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+    <label for="query">Пошук</label>
     <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
     <button>Search</button>
+    <div>
+        <label for="list">Виберіть опис авто</label>
+        <select name="list" id="list">
+          <option value="0">Виберіть опис авто...</option>
+          <option value="typeofcar">Тип кузова</option>
+          <option value="brand">Марка авто</option>
+          <option value="country">Страна производитель</option>
+          <option value="price">Цена (от и до).</option>
+          <option value="year">Год выпуска (от и до).</option>
+          <option value="condition">
+            Состояние (Битая, В кредите, Нерастаможенная и тд. Одновременно может быть выбрано несколько пунктов).
+          </option>
+          <option value="petrol">Тип топлива</option>
+          <option value="manual/automat">Тип коробки передач</option>
+          <option value="color">Цвет</option>
+          <option value="comfort">Комфорт (Люк, Кожаный салон и тд)</option>
+        </select>
+      </div>
+      </fieldset>
+
   </form>
 </body>
 

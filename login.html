@@ -9,24 +9,34 @@
 </head>
 
 <body>
-  <h1>Login/Авторизация</h1>
-  <form action="" method="post">
-    <div>
-      <label for="e-mail">e-mail </label>
-      <input id="e" type="text">
-    </div>
-    <div>
-      <label for="password">password</label>
-      <input id="password" type="password">
-    </div>
-    <div>
-      <input type="submit" value="submit">
-      <input type="reset" value="reset">
-    </div>
-    <div>
-      <input type="checkbox" name="запомнить пароль" id="remb">
-      <label for="remb">запомнить пароль</label>
-    </div>
+  <fieldset>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="search.html">Search</a>
+  </fieldset>
+
+  <fieldset>
+    <h2> <b>Авторизація</b></h2>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <div>
+        <label for="e">e-mail</label>
+        <input name="email" id="e" type="email" placeholder="e-mail...">
+      </div>
+      <div>
+        <label for="ps">password</label>
+        <input name="password" id="ps" type="password" placeholder="password...">
+      </div>
+      <div>
+        <input type="submit" value="увійти">
+        <input type="reset" value="відмінити">
+      </div>
+
+      <div>
+        <input type="checkbox" name="remember password" id="remb">
+        <label for="remb">запам'ятати пароль</label>
+      </div>
+    </form>
+  </fieldset>
 </body>
 
 </html>
