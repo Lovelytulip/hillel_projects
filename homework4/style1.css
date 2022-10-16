@@ -1,0 +1,29 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.style {
+  font-size: 40px;
+}
+
+#red {
+  background-color: red;
+}
+
+h1 [class="style"] {
+  color: orange;
+}
+
+h2 + p {
+  background-color:blue;
+}
+
+h2 ~ p {
+  background-color: orange;
+}
+
+div > p {
+  border-bottom: 6px;
+  font-style: italic;
+}
+

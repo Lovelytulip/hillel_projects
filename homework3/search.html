@@ -9,11 +9,13 @@
 </head>
 
 <body>
-  <fieldset>
+  <div>
     <a href="login.html">Login</a>
     <a href="registration.html">Registration</a>
     <a href="search.html">Search</a>
-  </fieldset>
+  </div>
+
+
   <h1>Виберіть опис авто</h1>
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <div>
@@ -56,8 +58,8 @@
     </div>
 
     <div>
-      <label for="condition" multiple>Состояние</label>
-      <select name="condition" id="condition">
+      <label for="condition">Состояние</label>
+      <select name="condition" id="condition" multiple>
         <option value="destroyed">Битая</option>
         <option value="in_credit">В кредите</option>
         <option value="not_unloaded">Нерастаможенная</option>
