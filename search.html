@@ -14,29 +14,97 @@
     <a href="registration.html">Registration</a>
     <a href="search.html">Search</a>
   </fieldset>
-  <h1>Пошук</h1>
+  <h1>Виберіть опис авто</h1>
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
-
-    <label for="query">Пошук</label>
-    <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-    <button>Search</button>
     <div>
-      <label for="list">Виберіть опис авто</label>
-      <select name="list" id="list">
-        <option value="0">Виберіть опис авто...</option>
-        <option value="typeofcar">Тип кузова</option>
-        <option value="brand">Марка авто</option>
-        <option value="country">Страна производитель</option>
-        <option value="price">Цена (от и до).</option>
-        <option value="year">Год выпуска (от и до).</option>
-        <option value="condition">
-          Состояние (Битая, В кредите, Нерастаможенная и тд. Одновременно может быть выбрано несколько пунктов).
-        </option>
-        <option value="petrol">Тип топлива</option>
-        <option value="manual/automat">Тип коробки передач</option>
-        <option value="color">Цвет</option>
-        <option value="comfort">Комфорт (Люк, Кожаный салон и тд)</option>
+      <label for="kind">Тип кузова</label>
+      <select name="kind" id="kind">
+        <option value="Picap">Пікап</option>
+        <option value="Cabriolet">Кабріолет</option>
       </select>
+    </div>
+    <div>
+      <label for="brand">Марка авто</label>
+      <select name="brand" id="brand">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="country">Страна производитель</label>
+      <select name="country" id="country">
+        <option value="england">Англія</option>
+        <option value="germany">Німеччина</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="price">Ціна</label>
+      <select name="price" id="price">
+        <option value="max50">Від 10000-50000</option>
+        <option value="max100">Від 50000-100000</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="year">Рік</label>
+      <select name="year" id="year">
+        <option value="2017">1999-2017</option>
+        <option value="2022">2017-2022</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="condition" multiple>Состояние</label>
+      <select name="condition" id="condition">
+        <option value="destroyed">Битая</option>
+        <option value="in_credit">В кредите</option>
+        <option value="not_unloaded">Нерастаможенная</option>
+        <option value="new">Новая</option>
+      </select>
+    </div>
+
+
+    <div>
+      <label for="petrol">Тип топлива</label>
+      <select name="petrol" id="petrol">
+        <option value="petrol">бензин</option>
+        <option value="diesel">дизель</option>
+        <option value="gas">газ</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="driverassist">Тип коробки передач</label>
+      <select name="driverassist" id="driverassist">
+        <option value="manual">механика</option>
+        <option value="automat">автомат</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="color">Цвет</label>
+      <select name="color" id="color">
+        <option value="red">червоний</option>
+        <option value="black">черний</option>
+        <option value="white">білий</option>
+        <option value="green">темно зелений</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="comfort">Комфорт</label>
+      <select name="comfort" id="comfort">
+        <option value="door">Люк</option>
+        <option value="leather">Кожаный салон</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- <label for="search">Пошук</label> -->
+      <!-- <input type="text" name="text" id="search" class="search" placeholder="Search..."> -->
+      <input type="submit" name="submit" class="submit" value="пошук по критеріям">
     </div>
 
   </form>
