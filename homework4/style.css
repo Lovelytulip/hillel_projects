@@ -1,0 +1,51 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.style {
+  background-color: blueviolet;
+}
+
+#red {
+  background-color: red;
+}
+
+div>.orange {
+  background-color: orange;
+}
+
+p .mint {
+  background-color: mediumaquamarine;
+}
+
+body .yellow {
+  background-color: yellow;
+}
+
+.blue::first-letter {
+  background-color: blue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a:hover {
+  color: red;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+h1[ class="green"] {
+  background-color: green;
+}
+
+h2~p {
+  background-color: orange;
+}
+
+div .pink {
+  background-color: pink;
+}
+
+h2 {
+  background-color: coral;
+}
