@@ -1,0 +1,19 @@
+*{ box-sizing: border-box;}
+
+.columns-inline > div {
+  display: inline-block;
+  background-color: gray;
+  width: calc(33.3333% - 23px);
+  height: 100px;
+  margin: 10px;
+
+}
+
+.columns-float-margin > div {
+  background-color: gray;
+  width: calc(33.3333% - 20px);
+  height: 100px;
+  margin: 10px;
+  float: left;
+
+}
