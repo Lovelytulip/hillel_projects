@@ -179,3 +179,9 @@ width: min(100% - 40px, 1110px);
 margin-inline:auto;
 
 }
+
+.frame {
+  width: 1110px;
+  height: 600px;
+  border: 0;
+}
