@@ -47,9 +47,8 @@ a {
   color: black;
 }
 
-.navbar__link--active {
+.navbar__link-active {
   color: #34547A;
-  ;
   font-weight: 500;
 }
 
