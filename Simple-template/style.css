@@ -116,7 +116,7 @@ background-color:#34547A;
 .vactor{
   font-weight: 500;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 1.5625em;
   color: #FFFFFF;
 
 }
@@ -124,7 +124,7 @@ background-color:#34547A;
 .vactor1 {
 font-weight: 400;
 font-size: 16px;
-line-height: 26px;
+line-height: 1.625em;
 color: #FFFFFF;
 }
 
@@ -138,6 +138,9 @@ color: #FFFFFF;
   align-items: center;
 }
 
+.title-hidden {
+  overflow: hidden;
+}
 .movie {
   background-color:#EEEFF1;
   padding-top: 100px;
@@ -163,14 +166,15 @@ color: #FFFFFF;
 .name {
   font-weight: 500;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 1.5625em;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .security{
   font-weight: 400;
   font-size: 13px;
-  line-height: 21px;
+  line-height: 1.3125em;
   color: #FFFFFF;
 }
 
