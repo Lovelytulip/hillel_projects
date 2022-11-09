@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.container {
+  width: min(100% - 40px, 1110px);
+  margin-inline: auto;
+}
+
+
+.recent {
+  margin-bottom: 35px;
+}
+
+.title {
+  color:navy;
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 28px;
+  margin-top: 35px;
+}
+.block{
+display: flex;
+gap: 40px;
+justify-content: center;
+margin-top: 40px;
+}
+.block__item__roll {
+  width: 300px;
+  height: 300px;
+  border-radius: 45px;
+  background-color:  rgb(88, 87, 87);
+  background-image: url(assets/white.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.block__item-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 45px;
+}
+.block__item__slide {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  border-radius: 45px;
+  animation-duration: 4s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  flex: 1;
+  gap: 20px;
+  align-items: center;
+}
+.block__item__apear {
+  width: 300px;
+  height: 300px;
+  border-radius: 45px;
+  background-color:  rgb(88, 87, 87);
+  animation-duration: 4s;
+  animation-name: apear;
+  animation-iteration-count: 3;
+}
+
+.slide__text {
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 28px;
+  margin-top: 50px;
+  color:white;
+}
+
+.block__item__roll:hover {
+  transition: 1.5s;
+  background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), transparent);
+
+}
+
+.block__item__apear :hover {
+  animation-duration: 1.5s;
+  animation-name: roll;
+}
+
+@keyframes roll {
+  from{
+    border-radius: 100%;
+  }
+
+  to {
+    border-radius: 45px;
+  }
+}
+
+@keyframes slide {
+  from {
+
+    background-color: aquamarine;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes apear {
+  from {
+   margin-top: 100%;
+
+  }
+  to {
+   margin-left: 10%;
+  }
+}

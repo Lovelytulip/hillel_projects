@@ -236,7 +236,7 @@ a {
 
 .subscribe {
   background-color: var(--color-accent);
-  background-image: url(../img/envelope.svg);
+  background-image: url(assets/envelope.png);
   background-repeat: no-repeat;
   background-position: calc(100% - 45px) 50%;
   flex: 1;
@@ -275,7 +275,7 @@ a {
 
 .our-shops {
   background-color: var(--color-accent);
-  background-image: url(../img/car.svg);
+  background-image: url(assets/truck.png);
   background-repeat: no-repeat;
   background-position: calc(100% - 45px) 50%;
   flex: 1;
