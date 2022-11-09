@@ -90,6 +90,7 @@ a {
 .navbar {
   margin-bottom: 148px;
 }
+
 .navbar__list {
   list-style: none;
   display: flex;
@@ -109,17 +110,20 @@ a {
 .content {
   max-width: var(--container-small);
 }
+
 .content__title {
   margin: 0 0 35px;
   font-weight: 500;
   font-size: 48px;
   line-height: var(--line-height-lg);
 }
+
 .content__description {
   margin-bottom: 57px;
   line-height: var(--line-height-lg);
   color: var(--color-secondary);
 }
+
 .content__link {
   display: block;
   width: 225px;
@@ -156,6 +160,7 @@ a {
 .expirience-item__description {
   line-height: var(--line-height-lg);
 }
+
 .expirience-item__title {
   font-weight: 500;
   font-size: 21px;
